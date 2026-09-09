@@ -11,284 +11,476 @@
 
 <body>
 
-<!-- ФОН -->
-<div class="background"></div>
+    <!-- ФОН -->
+    <div class="background"></div>
 
-<!-- НАВИГАЦИЯ -->
-<header>
-    <div class="logo">LAST<span>DAY</span></div>
+    <!-- 3D СЛОИ -->
+    <div class="depth-layer layer-1"></div>
+    <div class="depth-layer layer-2"></div>
+    <div class="depth-layer layer-3"></div>
+    <div class="grid-background"></div>
 
-    <nav>
-        <a href="#home">Главная</a>
-        <a href="#about">Об игре</a>
-        <a href="#gallery">Галерея</a>
-        <a href="#features">Особенности</a>
-    </nav>
+    <!-- НАВИГАЦИЯ -->
+    <header>
+        <div class="logo">LAST<span>DAY</span></div>
 
-    <div class="header-buttons">
-        <button class="settings-btn" onclick="openSettings()">⚙</button>
-        <button class="login-btn" onclick="openAuth()">Войти</button>
-    </div>
-</header>
+        <nav>
+            <a href="#home">Главная</a>
+            <a href="#about">Об игре</a>
+            <a href="#gallery">Галерея</a>
+            <a href="#features">Особенности</a>
+        </nav>
 
-
-<!-- ГЛАВНАЯ -->
-<section id="home" class="hero">
-
-    <div class="hero-content">
-
-        <p class="small-title">SURVIVAL GAME</p>
-
-        <h1>LAST<br><span>DAY</span></h1>
-
-        <p class="description">
-            Мир разрушен. Ресурсы ограничены.
-            Выживи любой ценой.
-        </p>
-
-        <div class="hero-buttons">
-            <button class="primary" onclick="scrollToSection('about')">
-                УЗНАТЬ БОЛЬШЕ
-            </button>
-
-            <button class="secondary" onclick="openAuth()">
-                СОЗДАТЬ АККАУНТ
-            </button>
+        <div class="header-buttons">
+            <button class="settings-btn" onclick="openSettings()">⚙</button>
+            <button class="login-btn" onclick="openAuth()">Войти</button>
         </div>
-
-    </div>
-
-    <div class="scroll">
-        ↓ SCROLL
-    </div>
-
-</section>
+    </header>
 
 
-<!-- ОБ ИГРЕ -->
-<section id="about" class="section">
+    <!-- HERO -->
+    <section id="home" class="hero">
 
-    <div class="section-title">
-        <p>01 / ABOUT</p>
-        <h2>МИР <span>LAST DAY</span></h2>
-    </div>
+        <div class="hero-particle particle-1"></div>
+        <div class="hero-particle particle-2"></div>
+        <div class="hero-particle particle-3"></div>
 
-    <div class="about-grid">
+        <div class="hero-content">
 
-        <div class="about-image">
-            <div class="image-label">THE WORLD IS DEAD</div>
-        </div>
+            <p class="small-title">SURVIVAL GAME</p>
 
-        <div class="about-text">
+            <h1>
+                LAST<br>
+                <span>DAY</span>
+            </h1>
 
-            <h3>ТЕБЕ НЕКУДА БЕЖАТЬ</h3>
-
-            <p>
-                LAST DAY — survival-игра в открытом мире,
-                где каждый день может стать последним.
+            <p class="description">
+                Мир разрушен. Ресурсы ограничены.<br>
+                Выживи любой ценой.
             </p>
 
-            <p>
-                Исследуй заброшенные территории, собирай ресурсы,
-                строй убежище и сражайся за выживание.
-            </p>
+            <div class="hero-buttons">
 
-            <div class="stats">
+                <button class="primary" onclick="scrollToSection('about')">
+                    УЗНАТЬ БОЛЬШЕ
+                </button>
 
-                <div>
-                    <strong>01</strong>
-                    <span>OPEN WORLD</span>
+                <button class="secondary" onclick="openAuth()">
+                    СОЗДАТЬ АККАУНТ
+                </button>
+
+            </div>
+
+        </div>
+
+        <div class="scroll">
+            ↓ SCROLL
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+
+        <div class="section-title">
+
+            <p>01 / ABOUT</p>
+
+            <h2>
+                МИР <span>LAST DAY</span>
+            </h2>
+
+        </div>
+
+
+        <div class="about-grid">
+
+            <div class="about-image">
+
+                <div class="image-overlay"></div>
+
+                <div class="image-label">
+                    THE WORLD IS DEAD
                 </div>
 
-                <div>
-                    <strong>02</strong>
-                    <span>SURVIVAL</span>
-                </div>
+            </div>
 
-                <div>
-                    <strong>03</strong>
-                    <span>MULTIPLAYER</span>
+
+            <div class="about-text">
+
+                <h3>
+                    ТЕБЕ НЕКУДА БЕЖАТЬ
+                </h3>
+
+                <p>
+                    LAST DAY — survival-игра
+                    в открытом мире, где каждый
+                    день может стать последним.
+                </p>
+
+                <p>
+                    Исследуй заброшенные территории,
+                    собирай ресурсы, строй убежище
+                    и сражайся за выживание.
+                </p>
+
+
+                <div class="stats">
+
+                    <div>
+                        <strong>01</strong>
+                        <span>OPEN WORLD</span>
+                    </div>
+
+                    <div>
+                        <strong>02</strong>
+                        <span>SURVIVAL</span>
+                    </div>
+
+                    <div>
+                        <strong>03</strong>
+                        <span>MULTIPLAYER</span>
+                    </div>
+
                 </div>
 
             </div>
 
         </div>
 
-    </div>
-
-</section>
+    </section>
 
 
-<!-- ОСОБЕННОСТИ -->
-<section id="features" class="section dark">
+    <!-- FEATURES -->
+    <section id="features" class="section dark">
 
-    <div class="section-title">
-        <p>02 / FEATURES</p>
-        <h2>ОСОБЕННОСТИ</h2>
-    </div>
+        <div class="section-title">
 
-    <div class="cards">
+            <p>02 / FEATURES</p>
 
-        <div class="card">
-            <div class="card-number">01</div>
-            <h3>ВЫЖИВАНИЕ</h3>
-            <p>
-                Следи за ресурсами, исследуй мир
-                и находи всё необходимое для жизни.
-            </p>
+            <h2>
+                ОСОБЕННОСТИ
+            </h2>
+
         </div>
 
-        <div class="card">
-            <div class="card-number">02</div>
-            <h3>СТРОИТЕЛЬСТВО</h3>
-            <p>
-                Создавай собственную базу,
-                укрепляй её и защищай свои ресурсы.
-            </p>
+
+        <div class="cards">
+
+            <div class="card">
+
+                <div class="card-number">
+                    01
+                </div>
+
+                <div class="card-icon">
+                    ◈
+                </div>
+
+                <h3>
+                    ВЫЖИВАНИЕ
+                </h3>
+
+                <p>
+                    Следи за ресурсами,
+                    исследуй мир и находи
+                    всё необходимое для жизни.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="card-number">
+                    02
+                </div>
+
+                <div class="card-icon">
+                    ◇
+                </div>
+
+                <h3>
+                    СТРОИТЕЛЬСТВО
+                </h3>
+
+                <p>
+                    Создавай собственную базу,
+                    укрепляй её и защищай
+                    свои ресурсы.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="card-number">
+                    03
+                </div>
+
+                <div class="card-icon">
+                    △
+                </div>
+
+                <h3>
+                    ИССЛЕДОВАНИЕ
+                </h3>
+
+                <p>
+                    Заброшенные здания,
+                    леса, опасные территории
+                    и скрытые места.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="card-number">
+                    04
+                </div>
+
+                <div class="card-icon">
+                    ◎
+                </div>
+
+                <h3>
+                    МУЛЬТИПЛЕЕР
+                </h3>
+
+                <p>
+                    Объединяйся с другими
+                    игроками или соревнуйся
+                    за ресурсы.
+                </p>
+
+            </div>
+
         </div>
 
-        <div class="card">
-            <div class="card-number">03</div>
-            <h3>ИССЛЕДОВАНИЕ</h3>
-            <p>
-                Заброшенные здания, леса,
-                опасные территории и скрытые места.
-            </p>
+    </section>
+
+
+    <!-- GALLERY -->
+    <section id="gallery" class="section">
+
+        <div class="section-title">
+
+            <p>03 / GALLERY</p>
+
+            <h2>
+                ГАЛЕРЕЯ
+            </h2>
+
         </div>
 
-        <div class="card">
-            <div class="card-number">04</div>
-            <h3>МУЛЬТИПЛЕЕР</h3>
-            <p>
-                Объединяйся с другими игроками
-                или соревнуйся за ресурсы.
-            </p>
+
+        <div class="gallery">
+
+            <div class="gallery-item image1">
+
+                <div class="gallery-overlay"></div>
+
+                <span>
+                    WILDERNESS
+                </span>
+
+            </div>
+
+
+            <div class="gallery-item image2">
+
+                <div class="gallery-overlay"></div>
+
+                <span>
+                    ABANDONED
+                </span>
+
+            </div>
+
+
+            <div class="gallery-item image3">
+
+                <div class="gallery-overlay"></div>
+
+                <span>
+                    SURVIVAL
+                </span>
+
+            </div>
+
         </div>
 
-    </div>
-
-</section>
+    </section>
 
 
-<!-- ГАЛЕРЕЯ -->
-<section id="gallery" class="section">
+    <!-- JOIN -->
+    <section class="join">
 
-    <div class="section-title">
-        <p>03 / GALLERY</p>
-        <h2>ГАЛЕРЕЯ</h2>
-    </div>
+        <div class="join-glow"></div>
 
-    <div class="gallery">
-
-        <div class="gallery-item image1">
-            <span>WILDERNESS</span>
-        </div>
-
-        <div class="gallery-item image2">
-            <span>ABANDONED</span>
-        </div>
-
-        <div class="gallery-item image3">
-            <span>SURVIVAL</span>
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- CTA -->
-<section class="join">
-
-    <p>ARE YOU READY?</p>
-
-    <h2>ВЫЖИВИ<br><span>В ПОСЛЕДНИЙ ДЕНЬ</span></h2>
-
-    <button class="primary" onclick="openAuth()">
-        ПРИСОЕДИНИТЬСЯ
-    </button>
-
-</section>
-
-
-<!-- FOOTER -->
-<footer>
-
-    <div class="logo">LAST<span>DAY</span></div>
-
-    <p>© 2026 LAST DAY. ALL RIGHTS RESERVED.</p>
-
-    <div>
-        <a href="#home">Главная</a>
-        <a href="#about">Об игре</a>
-        <a href="#gallery">Галерея</a>
-    </div>
-
-</footer>
-
-
-<!-- ОКНО АВТОРИЗАЦИИ -->
-<div id="authModal" class="modal">
-
-    <div class="modal-box">
-
-        <button class="close" onclick="closeAuth()">×</button>
-
-        <h2 id="authTitle">ВХОД</h2>
-
-        <input id="username" type="text" placeholder="Имя пользователя">
-
-        <input id="password" type="password" placeholder="Пароль">
-
-        <button class="primary full" onclick="login()">
-            ВОЙТИ
-        </button>
-
-        <p id="authSwitch">
-            Нет аккаунта?
-            <span onclick="showRegister()">Зарегистрироваться</span>
+        <p>
+            ARE YOU READY?
         </p>
 
-    </div>
+        <h2>
+            ВЫЖИВИ
+            <br>
+            <span>В ПОСЛЕДНИЙ ДЕНЬ</span>
+        </h2>
 
-</div>
-
-
-<!-- НАСТРОЙКИ -->
-<div id="settingsModal" class="modal">
-
-    <div class="modal-box">
-
-        <button class="close" onclick="closeSettings()">×</button>
-
-        <h2>НАСТРОЙКИ</h2>
-
-        <label>
-            Размер текста
-            <select onchange="changeFont(this.value)">
-                <option value="normal">Обычный</option>
-                <option value="large">Большой</option>
-            </select>
-        </label>
-
-        <label>
-            Анимации
-            <select onchange="toggleAnimations(this.value)">
-                <option value="on">Включены</option>
-                <option value="off">Выключены</option>
-            </select>
-        </label>
-
-        <button class="secondary full" onclick="closeSettings()">
-            ГОТОВО
+        <button class="primary" onclick="openAuth()">
+            ПРИСОЕДИНИТЬСЯ
         </button>
 
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="logo">
+            LAST<span>DAY</span>
+        </div>
+
+        <p>
+            © 2026 LAST DAY. ALL RIGHTS RESERVED.
+        </p>
+
+        <div class="footer-links">
+
+            <a href="#home">
+                Главная
+            </a>
+
+            <a href="#about">
+                Об игре
+            </a>
+
+            <a href="#gallery">
+                Галерея
+            </a>
+
+        </div>
+
+    </footer>
+
+
+    <!-- AUTH MODAL -->
+    <div id="authModal" class="modal">
+
+        <div class="modal-box">
+
+            <button class="close" onclick="closeAuth()">
+                ×
+            </button>
+
+            <h2 id="authTitle">
+                ВХОД
+            </h2>
+
+            <input
+                id="username"
+                type="text"
+                placeholder="Имя пользователя"
+            >
+
+            <input
+                id="password"
+                type="password"
+                placeholder="Пароль"
+            >
+
+            <button
+                class="primary full"
+                onclick="login()"
+            >
+                ВОЙТИ
+            </button>
+
+            <p id="authSwitch">
+                Нет аккаунта?
+                <span onclick="showRegister()">
+                    Зарегистрироваться
+                </span>
+            </p>
+
+        </div>
+
     </div>
 
-</div>
+
+    <!-- SETTINGS MODAL -->
+    <div id="settingsModal" class="modal">
+
+        <div class="modal-box">
+
+            <button
+                class="close"
+                onclick="closeSettings()"
+            >
+                ×
+            </button>
+
+            <h2>
+                НАСТРОЙКИ
+            </h2>
 
 
-<script src="script.js"></script>
+            <label>
+
+                Размер текста
+
+                <select onchange="changeFont(this.value)">
+
+                    <option value="normal">
+                        Обычный
+                    </option>
+
+                    <option value="large">
+                        Большой
+                    </option>
+
+                </select>
+
+            </label>
+
+
+            <label>
+
+                Анимации
+
+                <select onchange="toggleAnimations(this.value)">
+
+                    <option value="on">
+                        Включены
+                    </option>
+
+                    <option value="off">
+                        Выключены
+                    </option>
+
+                </select>
+
+            </label>
+
+
+            <button
+                class="secondary full"
+                onclick="closeSettings()"
+            >
+                ГОТОВО
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
 
 </body>
 </html>
